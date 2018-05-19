@@ -23,12 +23,17 @@ class App extends React.Component {
 
     this.state = {
       playlistName: '',
-      playlistTracks: {
-        name: [],
-        artist: [],
-        album: [],
-        id: []
-      }
+      playlistTracks: [
+        { name: "", artist: "", album: "", id: "" },
+        { name: "", artist: "", album: "", id: "" },
+        { name: "", artist: "", album: "", id: "" },
+        { name: "", artist: "", album: "", id: "" },
+        { name: "", artist: "", album: "", id: "" },
+        { name: "", artist: "", album: "", id: "" },
+        
+      ]
+        
+      
     };
 
   }
