@@ -23,16 +23,16 @@ const Spotify = {
                 artis: track.artists[0].name,
                 album: track.album.name,
                 uri: track.uri
-
+                
                }));
             }
            }); 
-        },
+           },
     
     savePlaylist(name,uri){
         if(name === '' && uri === ''){
             return;
-        }
+            }
         else{
             return;
         }
@@ -57,7 +57,7 @@ const Spotify = {
         const accessUrl = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectedUri}`;
         window.location = accessUrl;
         }
-    }
+          }
 };
 
 export default Spotify;
