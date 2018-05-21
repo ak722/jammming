@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-
+import React from 'react';
+import Track from '../Track/Track';
 import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';

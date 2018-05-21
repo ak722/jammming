@@ -13,7 +13,7 @@ class Track extends React.Component{
    
     renderAction(){
       
-        if (isRemoval === true){
+        if (this.state.isRemoval === true){
            return <h1 onClick={this.removeTrack}>-</h1>;
        }
        else{
@@ -22,11 +22,11 @@ class Track extends React.Component{
    }
    
    addTrack(){
-   {this.props.track = this.props.onAdd} ;
+        this.props.track = this.props.onAdd ;
    }
 
    removeTrack(){
-       {this.props.track = this.props.onRemove};
+       this.props.track = this.props.onRemove;
    }
 
    

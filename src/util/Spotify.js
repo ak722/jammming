@@ -30,7 +30,7 @@ const Spotify = {
         },
     
     savePlaylist(name,uri){
-        if(name == '' && uri == ''){
+        if(name === '' && uri === ''){
             return;
         }
         else{
