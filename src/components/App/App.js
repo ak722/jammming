@@ -18,12 +18,9 @@ class App extends React.Component {
         name: 'New Playlist',
         artist: [],
         album: [],
-        id: []
-    };
-
-    this.state = {
-      playlistName: '',
-      playlistTracks: [
+        id: [],
+        playlistName: '',
+        playlistTracks: [
         { name: "", artist: "", album: "", id: "" },
         { name: "", artist: "", album: "", id: "" },
         { name: "", artist: "", album: "", id: "" },
