@@ -7,6 +7,7 @@ const redirectedUri = "http://localhost:3000/";
 const Spotify = {
     
     search(term){
+        const accessToken = Spotify.getAccessToken();
         return fetch(`https://api.spotify.com/v1/search?type=track&q=${term}`,{
             headers: {
                 Authorization: `Bearer ${accessToken}`
@@ -16,7 +17,7 @@ const Spotify = {
             return response.json();
         }).then(jsonResponse => {
            if(jsonResponse.tracks){
-               return jsonResponse.Tracks.map(track =>({
+               return jsonResponse.tracks.items.map(track =>({
 
                 id: track.id,
                 name: track.name,
