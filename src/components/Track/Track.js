@@ -13,7 +13,7 @@ class Track extends React.Component{
    
     renderAction(){
       
-        if (isRemoval === true){
+        if (this.props.isRemoval === true){
            return <h1 onClick={this.removeTrack}>-</h1>;
        }
        else{
