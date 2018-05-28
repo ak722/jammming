@@ -5,10 +5,18 @@ import Track from '../Track/Track';
 class TrackList extends React.Component{
     render(){
         return (<div className="TrackList">{
-        this.props.tracks.map(track =>{
-         return <Track key={track.id} isRemoval={this.props.isRemoval} onAdd={this.props.onAdd} onRemove={this.props.onRemove} />
+        this.props.tracks.map(track =>
+          <Track 
+                key={track.id}
+                track={track}
+                name={track.name}
+                artist={track.artist}
+                album={this.album}
+                isRemoval={this.props.isRemoval} 
+                onAdd={this.props.onAdd} 
+                onRemove={this.props.onRemove} />
        
-    })}
+    )}
     </div>
     );
 
